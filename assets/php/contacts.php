@@ -1,8 +1,8 @@
 <?php
 //variable setting
-$name = $_REQUEST["Name"]
-$email = $_REQUEST["Email"]
-$message = $_REQUEST["Message"]
+$name = $_REQUEST["name"]
+$email = $_REQUEST["mail"]
+$message = $_REQUEST["message"]
 
 //check input fields
 if (empty($name)|| empty($email) || empty($message))
