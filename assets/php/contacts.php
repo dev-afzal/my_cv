@@ -13,6 +13,6 @@ else
 {
 	mail("iafzalhameed@gmail.com", "Afzal Portfolio", $message, "Form: $name < $email>");
 	echo "<script type='text/javascript'>alert('your message has been sent');
-	window.history.log(-1);
+	window.history.go(-1);
 	</script>";
 ?>
