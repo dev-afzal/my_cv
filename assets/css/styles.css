@@ -16,15 +16,7 @@
 }
 
 
-#icon{
-  width: 30px;
-  cursor: pointer;
-  padding-top: 35px;
-}
-nav ul{
-  flex: 1;
-  text-align: right;
-}
+
 
 
 /*===== Fuente y tipografia =====*/
@@ -158,9 +150,13 @@ img{
 .nav__item{
   margin-bottom: var(--mb-4);
 }
+.nav__item .active a {
+  color: #e45820;
+  
+}
 .nav__link{
   position: relative;
-  color: #fff;
+  color: rgb(163, 93, 93);
 }
 .nav__link:hover{
   position: relative;
@@ -210,6 +206,7 @@ img{
 }
 .home__data{
   align-self: center;
+  margin-top: 10%;
 }
 .home__title{
   font-size: var(--big-font-size);
@@ -427,6 +424,7 @@ img{
   }
   .home__data{
     align-self: flex-end;
+    margin-top: 15%;
   }
   .home__social{
     padding-top: 0;
@@ -536,3 +534,35 @@ img{
   }
 
 }
+
+.contact a {
+  width: 160px;
+  background: linear-gradient(to right, blue, green);
+  padding: 15px 15px;
+  text-decoration: none;
+  text-align: center;
+  color: #ffffff;
+  display: inline-block;
+  margin: 0px 0px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: width 0.5s;
+}
+
+.contact a img{
+  width: 15px;
+  display: none;
+}
+
+.contact a:hover img{
+  display: block;
+}
+
+.contact a:hover{
+  width: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
