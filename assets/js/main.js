@@ -56,9 +56,11 @@ sr.reveal('.work__img',{interval: 200});
 /*SCROLL CONTACT*/
 sr.reveal('.contact__input',{interval: 200}); 
 
-
+/*HOME TYPING TEXT*/
 ityped.init(document.querySelector("#ityped"), {
                 showCursor: true,
                 strings: ['A Web Designer', 'A Web Developer', 'An SEO Expert', 'Digital Marketer']
             })
 
+/*DISABLE RIGHT CLICK */
+document.addEventListener('contextmenu', event => event.preventDefault());
