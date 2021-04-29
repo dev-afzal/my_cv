@@ -63,4 +63,4 @@ ityped.init(document.querySelector("#ityped"), {
             })
 
 /*DISABLE RIGHT CLICK */
-document.addEventListener('contextmenu', event => event.preventDefault());
+/* document.addEventListener('contextmenu', event => event.preventDefault());*/
