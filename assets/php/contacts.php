@@ -1,18 +1,35 @@
 <?php
 //variable setting
-$name = $_REQUEST["name"];
-$email = $_REQUEST["mail"];
-$message = $_REQUEST["message"];
+$User_name = $_POST['name'];
+$phone = $_POST["phone"];
+$user_email = $_POST["mail"];
+$message = $_POST["message"];
 
-//check input fields
-if (empty($name)|| empty($email) || empty($message))
+$email_form = 'iafzalhameed@gmail.com';
+$email_subject = "New Form Submission";
+$email_body = "Name: $User_name. \n".
+	"Phone No: $phone. \n".
+	"Email Id: $user_email.\n";	;
+
+	$to_email = "iafzalhameed@gmail.com"
+		$headers = "From: $email_form \r\n";
+		$headers = "Reply-To: $user-email\r\n";
+
+$secretKey = "6LcCh78aAAAAAPTROiAy22r3FOxL_BOyO7A-qrOj";
+$responseKey = $_POST['g-recaptcha-response'];
+$UserIP = $_SERVER['REMOTE ADDR'];
+$url = "https://www.google.com/recaptcha/api/siteverify?secret="$secretKey&Response=$responseKey&remoteip=$UserIP";
+
+$response = file_getcontents($url);
+$response = json_decode($response);
+if ($response-> success)
 {
-	echo "Please fill all the fields";
+mail($to_email,$email_subject,$email_body, $headers);
+echo "Message Sent Successfully"
 }
 else
 {
-	mail("iafzalhameed@gmail.com", "Afzal Portfolio", $message, "Form: $name < $email>");
-	echo "<script type='text/javascript'>alert('your message has been sent');
-	window.history.go(-1);
-	</script>";
-?>
+echo = "<span> Invalid Captcha, Please Try Again</span>"
+}
+		
+//check input fields
