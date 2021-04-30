@@ -196,7 +196,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <!--===== CONTACT =====-->
             <section class="contact section" id="contact">
                 <h2 class="section-title">Contact</h2>
-
+<h2 class="sent_notification"></h2>
                 <div class="contact__container bd-grid">
                     <form name="contact" method="POST" action="/mail_handler.php" class="contact__form" data-netlify="true">
                         <input type="text" name="name" placeholder="Your Name (required)" class="contact__input" required>
@@ -207,7 +207,45 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         <input type="submit" name="contact" value="Send Me" class="contact__button submit">
                         
                     </form>
-                    
+                    <script src="https://code.jquery.com/jquery-3.6.0.min.js"> </script>
+                    <script type="text/javascript">
+function sendEmail(){
+    var name = $("#name");
+    var email = $("#email");
+    var phone = $("#phone");
+    var message = $("#message");
+
+    if(isNotEmpty(name) && isNotEmpty(phone) && isNotEmpty(email) && isNotEmpty(message)){
+        $.ajax({
+            url: 'senEmail.php',
+            method: 'POST',
+            dataType: 'json',
+            data:{
+                name: name.val(),
+                phone: phone.val(),
+                email: email.val(),
+                mesgase: message.val()
+            }, success: function(response){
+                $('#contact') [0].reset();
+                $('.sent-notification').text("Your message has been sent.");
+
+            }
+        });
+    }
+
+}
+function isNotEmpty(caller){
+    if(caller.val()==""){
+        caller.css('border', '1px solid red');
+        return false;
+    }
+    else
+    {
+caller.css('border', '');
+return true;
+    }
+    }
+}
                 </div>
             </section>
         </main>
