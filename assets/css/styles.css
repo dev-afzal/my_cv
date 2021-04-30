@@ -354,7 +354,7 @@ img{
   outline: none;
   margin-bottom: var(--mb-4);
 }
-.contact__button{
+.contact__button submit{
   display: block;
   border: none;
   outline: none;
