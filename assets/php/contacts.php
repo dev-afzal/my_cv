@@ -7,7 +7,7 @@ $message = $_POST["message"];
 
 $email_form = 'iafzalhameed@gmail.com';
 $email_subject = "New Form Submission";
-$email_body = "Name: $User_name. \n".
+$email_body = "Name: $user_name. \n".
 	"Phone No: $phone. \n".
 	"Email Id: $user_email.\n";	;
 
