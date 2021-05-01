@@ -7,7 +7,7 @@
 }
 
 :root{
-  --first-color: #4070F4;
+  --first-color: #5892FF;
   --second-color: #0E2431;
 }
 .dark-theme{
@@ -354,7 +354,7 @@ img{
   outline: none;
   margin-bottom: var(--mb-4);
 }
-.contact__button.submit{
+.contact__button{
   display: block;
   border: none;
   outline: none;
@@ -566,7 +566,3 @@ img{
 
 }
 
-.g-recaptcha
-{
-  marging: 10px 20px;
-}
