@@ -77,17 +77,12 @@ a{
   text-decoration: none;
 }
 img{
-  max-width: 90%;
+  max-width: 100%;
   height: auto;
   display: block;
 }
 
 /*===== CLASS CSS ===== */
-.bout img{
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
 .section-title{
   position: relative;
   font-size: var(--h2-font-size);
