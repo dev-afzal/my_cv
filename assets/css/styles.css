@@ -305,16 +305,19 @@ img{
   z-index: var(--z-back);
 }
 .skills__html{
-  width: 95%;
-}
-.skills__css{
   width: 85%;
 }
 .skills__js{
-  width: 65%;
+  width: 60%;
 }
-.skills__ux{
-  width: 85%;
+.skills__jq{
+  width: 75%;
+}
+.skills__shopify{
+  width: 80%;
+}
+.skills__wp{
+  width: 95%;
 }
 .skills__img{
   border-radius: .5rem;
