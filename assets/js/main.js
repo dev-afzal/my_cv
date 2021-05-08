@@ -86,7 +86,7 @@ $(document).ready( function() {
 		[720, 10]
 	];
 
-	var itemsPerPageDefault = 12;
+	var itemsPerPageDefault = 6;
 	var itemsPerPage = defineItemsPerPage();
 	var currentNumberPages = 1;
 	var currentPage = 1;
