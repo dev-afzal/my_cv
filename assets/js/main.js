@@ -86,7 +86,7 @@ $(document).ready( function() {
 		[720, 10]
 	];
 
-	var itemsPerPageDefault = 6;
+	var itemsPerPageDefault = 12;
 	var itemsPerPage = defineItemsPerPage();
 	var currentNumberPages = 1;
 	var currentPage = 1;
@@ -226,36 +226,6 @@ $('.isotope-pager').on( 'click', 'a', function() {
 });
     })
 	
-	
-	
-	
-	
-	
-	
-
-$(document).ready(function(){
-$('.popupimg').magnificPopup({
-	type: 'image',
-  mainClass: 'mfp-with-zoom', 
-  gallery:{
-			enabled:true
-		},
-
-  zoom: {
-    enabled: true, 
-
-    duration: 300, // duration of the effect, in milliseconds
-    easing: 'ease-in-out', // CSS transition easing function
-
-    opener: function(openerElement) {
-
-      return openerElement.is('img') ? openerElement : openerElement.find('img');
-  }
-}
-
-});
-
-});
 
 $('.brand-carousel').owlCarousel({
     loop:true,
