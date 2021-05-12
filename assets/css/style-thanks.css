@@ -27,7 +27,7 @@ h1{
     font-family: 'Kaushan Script', cursive;
   font-size:4em;
   letter-spacing:3px;
-  color:#5892FF ;
+  color:#996515 ;
   margin:0;
   margin-bottom:20px;
 }
@@ -40,7 +40,7 @@ h1{
 }
 .go-home{
   color:#fff;
-  background:#5892FF;
+  background:#996515;
   border:none;
   padding:10px 50px;
   margin:30px 0;
@@ -51,7 +51,7 @@ h1{
 }
 .go-home:hover {
 	background: #356094;
-	border: solid 1px #2A4E77;
+	border: solid 1px #996515;
 	text-decoration: none;
 	
 }
