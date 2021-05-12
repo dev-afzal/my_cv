@@ -226,11 +226,10 @@ $('.isotope-pager').on( 'click', 'a', function() {
 });
     })
 
-// DARK MODE
+	// DARK MODE
 	
 	const chk = document.getElementById('chk');
 
 	chk.addEventListener('change', () => {
 		document.body.classList.toggle('dark');
 	});
-	
