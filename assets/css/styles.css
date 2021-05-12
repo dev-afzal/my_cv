@@ -7,8 +7,8 @@
 }
 
 :root{
-  --first-color: #5892FF;
-  --second-color: #0E2431;
+  --first-color: #996515;
+  --second-color: #000000;
 }
 .dark-theme{
   --primary-color: #000106;
@@ -306,19 +306,19 @@ img{
   z-index: var(--z-back);
 }
 .skills__html{
-  width: 85%;
-}
-.skills__js{
-  width: 60%;
-}
-.skills__jq{
-  width: 75%;
-}
-.skills__shopify{
   width: 80%;
 }
+.skills__cs{
+  width: 65%;
+}
+.skills__js{
+  width: 55%;
+}
+.skills__bs{
+  width: 70%;
+}
 .skills__wp{
-  width: 95%;
+  width: 90%;
 }
 .skills__img{
   border-radius: .5rem;
@@ -547,7 +547,7 @@ img{
   text-align: center;
   color: #ffffff;
   display: inline-block;
-  margin: 10px 0px;
+  margin: 0px 0px;
   border-radius: 20px;
   cursor: pointer;
   transition: width 0.5s;
@@ -706,6 +706,10 @@ img{
     right: 0;
   }
   
+  
+  
+  
+  
   .overlay {
     position: absolute; 
     bottom: 0; 
@@ -725,10 +729,9 @@ img{
     opacity: 1;
   }
   
- 
   /* DARK MODE */
   body.dark {
-    background: #7681a1;
+    background: #3c4252;
   }
  
   
@@ -748,7 +751,7 @@ img{
     position: relative;
     height: 26px;
     width: 50px;
-    transform: scale(1.1);
+    transform: scale(1);
     
   }
   
