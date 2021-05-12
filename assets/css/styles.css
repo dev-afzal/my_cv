@@ -820,7 +820,7 @@ img{
 }
 
 .whitebuttondemo a:before {
-  content:'\f004';
+  content:'\2193';
   
   font-weight: normal;
   padding: 10px;
